@@ -1,0 +1,2 @@
+Timestamp,Source IP,Source Port,Destination IP,Destination Port,HTTP Info
+2026-03-09 04:10:08,172.18.160.107,34894,104.18.26.120,80,GET / HTTP/1.1

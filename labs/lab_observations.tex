@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstdefinestyle{packets}{
+    basicstyle=\ttfamily\small,
+    backgroundcolor=\color{gray!10},
+    breaklines=true,
+    frame=single
+}
+\title{Network Sniffer Lab Observations (Lab 1-9)}
+\author{Tumelo Ngoma}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Observations}
+
+\begin{longtable}{|c|c|c|c|c|c|p{5cm}|}
+\hline
+\textbf{Lab} & \textbf{Focus} & \textbf{Packets Captured} & \textbf{Source IP} & \textbf{Destination IP} & \textbf{Protocol} & \textbf{Observations} \\
+\hline
+1 & ICMP & 5 requests / 5 replies & 172.18.160.107 & 8.8.8.8 & ICMP & ICMP echo requests and replies captured successfully. Communication with Google DNS verified. \\
+\hline
+2 & TCP & fill in & fill in & fill in & TCP & fill in \\
+\hline
+3 & UDP & fill in & fill in & fill in & UDP & fill in \\
+\hline
+4 & DNS & fill in & fill in & fill in & DNS & fill in \\
+\hline
+5 & HTTP & fill in & fill in & fill in & HTTP & fill in \\
+\hline
+6 & ARP & fill in & fill in & fill in & ARP & fill in \\
+\hline
+7 & FTP & fill in & fill in & fill in & FTP & fill in \\
+\hline
+8 & Email & fill in & fill in & fill in & SMTP/POP3 & fill in \\
+\hline
+9 & Combined & fill in & fill in & fill in & mixed & fill in \\
+\hline
+\end{longtable}
+
+\section*{Lab 1 Packet Capture Output}
+
+\begin{lstlisting}[style=packets]
+ICMP Packet: Ether / IP / ICMP 172.18.160.107 > 8.8.8.8 echo-request 0 / Raw
+ICMP Packet: Ether / IP / ICMP 8.8.8.8 > 172.18.160.107 echo-reply 0 / Raw
+ICMP Packet: Ether / IP / ICMP 172.18.160.107 > 8.8.8.8 echo-request 0 / Raw
+ICMP Packet: Ether / IP / ICMP 8.8.8.8 > 172.18.160.107 echo-reply 0 / Raw
+ICMP Packet: Ether / IP / ICMP 172.18.160.107 > 8.8.8.8 echo-request 0 / Raw
+\end{lstlisting}\end{document}
